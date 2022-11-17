@@ -57,8 +57,40 @@ Project Submission Structure
     │   ├── Credential.java             # Stores information about user added credentials
     │   └── CredentialInterface.java    # Methods for defining the behavior of Credential
     
-  #### database
+ #### database
     .
     ├── database
     │   └── DBConnection.java           # Creates a connection to the database and has querying methods
+    
+ #### gui
+    .
+    ├── gui
+    │   ├── InfoList.java                     # Updates the thumbnail list in the GUI
+    │   └── PasswordManagerController.java    # Controller class that is linked to the FXML file
+ 
+ #### invites
+    .
+    ├── invites
+    │   ├── Invite.java                 # Stores information about team invitiations sent to other users
+    │   └── InviteInterface.java        # Methods for defining the behavior of Invite
+    
+  #### role
+    .
+    ├── role
+    │   ├── Role.java                   # Stores information about team role privileges
+    │   └── RoleInterface.java          # Methods for defining the behavior of Role
+ 
+   #### team
+    .
+    ├── team
+    │   ├── Team.java                   # Stores information about a user created team
+    │   └── TeamInterface.java          # Methods for defining the behavior of Team
+    
+   #### user
+    .
+    ├── user
+    │   ├── User.java                   # Stores information about every user that registers
+    │   └── UserInterface.java          # Methods for defining the behavior of User
+    
+
     
