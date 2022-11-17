@@ -24,3 +24,22 @@ Project Submission Structure
     ├── images                    # image files for the README.md
     ├── .gitignore
     └── README.md
+    
+### Source files
+    .
+    ├── PassMnger
+    │   ├── src
+    │   │   ├── main
+    │   │   │   ├── java
+    │   │   │   │   ├── Main
+    │   │   │   │   ├── credential
+    │   │   │   │   ├── database
+    │   │   │   │   ├── gui
+    │   │   │   │   ├── invites
+    │   │   │   │   ├── role
+    │   │   │   │   ├── team
+    │   │   │   │   └── user
+    │   │   │   └── ... 
+    │   │   └── ... 
+    │   └── ... 
+    └── ...
