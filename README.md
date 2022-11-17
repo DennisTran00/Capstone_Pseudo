@@ -31,14 +31,14 @@ Project Submission Structure
     │   ├── src
     │   │   ├── main
     │   │   │   ├── java
-    │   │   │   │   ├── Main
-    │   │   │   │   ├── credential
-    │   │   │   │   ├── database
-    │   │   │   │   ├── gui
-    │   │   │   │   ├── invites
-    │   │   │   │   ├── role
-    │   │   │   │   ├── team
-    │   │   │   │   └── user
+    │   │   │   │   ├── Main                # Package that contains the launch application and GUI file
+    │   │   │   │   ├── credential          # Package for credential isntances used to save user credentials
+    │   │   │   │   ├── database            # Contains the database connection class for database access
+    │   │   │   │   ├── gui                 # Package for the GUI controller class
+    │   │   │   │   ├── invites             # Package for invitation instances to add users to a team (feature)
+    │   │   │   │   ├── role                # Package for creating role instances for team credential privileges 
+    │   │   │   │   ├── team                # Package for team instances and storing information about created teams
+    │   │   │   │   └── user                # Package for user isntances when a user registers an account
     │   │   │   └── ... 
     │   │   └── ... 
     │   └── ... 
