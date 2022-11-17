@@ -15,3 +15,12 @@ The purpose of this product is to provide individuals, teams, and organizations 
 
 Project Submission Structure
 ============================
+> Folder structure has been split into detailed section for ease of understanding
+
+### Top-level directory
+
+    .
+    ├── PassMnger                 # Project files
+    ├── images                    # image files for the README.md
+    ├── .gitignore
+    └── README.md
