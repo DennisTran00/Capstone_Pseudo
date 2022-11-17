@@ -43,3 +43,11 @@ Project Submission Structure
     │   │   └── ... 
     │   └── ... 
     └── ...
+    
+#### Main
+    .
+    ├── Main
+    │   ├── PasswordManager.java        # The main launch application (creates the JavaFX Stage)
+    │   ├── PasswordManagerGUI.fxml     # FXML file exported from SceneBuilder GUI creator
+    │   └── Style.css                   # CSS file that formats fxml elements in the GUI
+    
