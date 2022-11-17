@@ -4,7 +4,7 @@
 
 # Authors
 
-- [Brandon Pearson](https://github.com/blpearson26)
+- [Brandon Pearson](https://github.com/blpearson26) - Cyber Security
 - [Dennis Tran](https://github.com/DennisTran00)
 - [Addison Burkett](https://github.com/westvalard)
 - [Kyle Parker](https://github.com/CraftyAmigo)
