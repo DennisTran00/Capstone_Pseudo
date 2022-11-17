@@ -91,7 +91,7 @@ Project Submission Structure
     │   ├── User.java                   # Stores information about every user that registers
     │   └── UserInterface.java          # Methods for defining the behavior of User
  
- ## Resource Icons
+ ### Resource Icons
  > Icons used in the Graphical User Interface can be found in the `res` pacakge by following the path: src > main > java > res.
     
 
