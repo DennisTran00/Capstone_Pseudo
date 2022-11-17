@@ -51,3 +51,14 @@ Project Submission Structure
     │   ├── PasswordManagerGUI.fxml     # FXML file exported from SceneBuilder GUI creator
     │   └── Style.css                   # CSS file that formats fxml elements in the GUI
     
+ #### credential
+    .
+    ├── credential
+    │   ├── Credential.java             # Stores information about user added credentials
+    │   └── CredentialInterface.java    # Methods for defining the behavior of Credential
+    
+  #### database
+    .
+    ├── database
+    │   └── DBConnection.java           # Creates a connection to the database and has querying methods
+    
