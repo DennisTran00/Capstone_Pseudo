@@ -250,6 +250,13 @@ Now, locate PasswordManager.java and right click it. Hover over `Run As` and sel
 </details>
 
 <details><summary><b>Refreshing the workspace</b></summary>
+
+If you are able to launch the project, but the GUI is just showing a white box, it means that is not correctly reading the .jfxml file. Locate PasswordManagerGUI.fxml and make sure there is content in that file. If there is content in that file, make sure to refresh the workspace and relaunch the project. In most cases this will fix the problem of an empty GUI.
+
 </details>
+
 <details><summary><b>Program launches but program fails when trying to log in / register</b></summary>
+
+If the project launches correctly and you are able to see the GUI, but unable to interact with the GUI (initial register and log in), then that means that the database is not set up correctly. This project heavily relies on a working database connection. Ensure to follow the instructions under the `Database` section to correctly set up the database.
+
 </details>
