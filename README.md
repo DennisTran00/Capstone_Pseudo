@@ -157,7 +157,9 @@ This project currently utilizes a local MySQL database for demonstration purpose
 ````
 This means that the MySQL account must have a username of `root` and a password of `password` to get the database working correctly. If the database is being establish on Windows OS, ensure that the MySQL service is running by pressing `Win + R` on your keyboard to open the Run window. Then type `services.msc` and hit enter. Scroll down until you see MySQL and run the service if it not doing so already.
 Once MySQL is running on your machine, launch the MySQL command line. The following commands will set up the database required for the software to work:
+
 <details><summary><b>Database Setup Commands</b></summary> 
+
 ````
 CREATE DATABASE passwordmanager;
 
@@ -211,5 +213,4 @@ Username VARCHAR(255)
 );
 ````
 </details>
-
  
