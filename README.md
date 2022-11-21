@@ -226,8 +226,29 @@ Right click on it and proceed to `Properties`. A new window will open with the t
 Here you can change the version by checking `Execution Environment` and change it to `JavaSE-11 (jre)` if it is not so already
 	
 </details>
+
 <details><summary><b>Installing the correct Java dependencies and setting it in the runtime configurations</b></summary>
+
+If you run the project it will compile but you will get this error:
+
+```` diff
+- Error: JavaFX runtime components are missing, and are required to run this application
+
+````
+This error is shown since the Java 17 launcher checks if the main class extends javafx.application.Application. If that is the case, it is required to have the javafx.graphics module on the module-path.
+
+A possible fix to many problems regarding JavaFX would be to use the JavaFX SDK instead of a build tool. Use this [link](https://gluonhq.com/products/javafx/) to download the correct JavaFX SDK. Our project uses javafx-sdk-17.0.0.1. Download the zip file and save it to a location on your drive.
+
+Now, locate PasswordManager.java and right click it. Hover over `Run As` and select `Run Configurations...`. A new window titled `Run Configurations` should pop up. Navigate to the tab that says `Arguments` and under `VM arguments` add these VM arguments:
+
+````
+
+--module-path /path/to/javafx-sdk-17/lib --add-modules javafx.controls,javafx.fxml
+
+````
+
 </details>
+
 <details><summary><b>Refreshing the workspace</b></summary>
 </details>
 <details><summary><b>Program launches but program fails when trying to log in / register</b></summary>
