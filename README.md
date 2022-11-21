@@ -142,4 +142,74 @@ Screenshots
 </p>
 </details>
 
-    
+Database
+============================
+This project currently utilizes a local MySQL database for demonstration purposes. Therefore, it is necessary to correctly set up the database before the software can be launched. The database connection is established by the following code within DBConnection.java:
+````
+    private DBConnection() {
+		uri = "jdbc:mysql://localhost/passwordmanager?useSSL=false&allowPublicKeyRetrieval=true";
+		try {
+			dbCon = DriverManager.getConnection(uri, "root", "password");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+````
+This means that the MySQL account must have a username of `root` and a password of `password` to get the database working correctly. If the database is being establish on Windows OS, ensure that the MySQL service is running by pressing `Win + R` on your keyboard to open the Run window. Then type `services.msc` and hit enter. Scroll down until you see MySQL and run the service if it not doing so already.
+Once MySQL is running on your machine, launch the MySQL command line. The following commands will set up the database required for the software to work:
+<details><summary><b>Database Setup Commands</b></summary> 
+````
+CREATE DATABASE passwordmanager;
+
+use passwordmanager;
+
+CREATE TABLE user_info (
+username VARCHAR(255),
+password VARCHAR(255),
+ID VARCHAR(255)
+);
+
+CREATE TABLE credentials (
+UserID VARCHAR(255),
+Username VARCHAR(255),
+Password VARCHAR(255),
+URL VARCHAR(255),
+Notes VARCHAR(255),
+Created VARCHAR(255),
+CreationDate VARCHAR(255),
+ModifiedDate VARCHAR(255),
+Title VARCHAR(255)
+);
+
+CREATE TABLE teams (
+GroupID VARCHAR(255),
+GroupName VARCHAR(255),
+OwnerID VARCHAR(255)
+);
+
+CREATE TABLE members (
+GroupID VARCHAR(255),
+Username VARCHAR(255),
+UserID VARCHAR(255),
+Role VARCHAR(255),
+GroupName VARCHAR(255),
+Joined VARCHAR(255)
+);
+
+CREATE TABLE roles (
+GroupID VARCHAR(255),
+RoleID VARCHAR(255),
+RoleName VARCHAR(255),
+Username VARCHAR(255),
+Password VARCHAR(255)
+);
+
+CREATE TABLE invites (
+GroupID VARCHAR(255),
+UserID VARCHAR(255),
+Username VARCHAR(255)
+);
+````
+</details>
+
+ 
