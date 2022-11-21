@@ -216,8 +216,15 @@ Username VARCHAR(255)
  
 Troubleshooting Problems
 ============================
-> Since this project uses JavaFX for the graphical user interface, some problems related to JavaFX dependencies may occur when trying to launch the project for the first time. Make sure to follow these fixes to common problems with our project.
+> Since this project uses JavaFX for the graphical user interface, some problems related to JavaFX dependencies may occur when trying to launch the project for the first time. Make sure to follow these fixes to common problems with our project. All of these fixes are through the assumption that the project is being imported into Eclipse IDE.
+
 <details><summary><b>Ensure that the correct JavaSE version is being used</b></summary>
+	
+Make sure that the correct JavaSE version is being utilized. To do this, expand the project directory in the workspace. 
+Once the project directory has been expanded, you should see `JRE System Library`. 
+Right click on it and proceed to `Properties`. A new window will open with the title `Properties for JRE Systerm Library`. 
+Here you can change the version by checking `Execution Environment` and change it to `JavaSE-11 (jre)` if it is not so already
+	
 </details>
 <details><summary><b>Installing the correct Java dependencies and setting it in the runtime configurations</b></summary>
 </details>
