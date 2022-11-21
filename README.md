@@ -103,22 +103,43 @@ Project Submission Structure
  
 Screenshots
 ============================
-<details><summary><b>Initial Startup</b></summary>
-</details>
-
-<details><summary><b>Logged In</b></summary>
+<details><summary><b>Initial Startup</b></summary> 
+<p align="center">
+<img src="images/Initial.png">
+</p>
 </details>
 
 <details><summary><b>Credential View</b></summary>
+<p align="center">
+<img src="images/example.png">
+</p>
+<p align="center">
+<img src="images/cred2.png">
+</p>
 </details>
 
 <details><summary><b>Team View</b></summary>
+<p align="center">
+<img src="images/team.png">
+</p>
+<p align="center">
+<img src="images/assign.png">
+</p>
 </details>
 
 <details><summary><b>Inbox with team invitiation</b></summary>
+<p align="center">
+<img src="images/invitation.png">
+</p>
 </details>
 
 <details><summary><b>Audit Log</b></summary>
+<p align="center">
+<img src="images/audit1.png">
+</p>
+<p align="center">
+<img src="images/audit2.png">
+</p>
 </details>
 
     
