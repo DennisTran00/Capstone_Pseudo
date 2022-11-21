@@ -100,6 +100,25 @@ Project Submission Structure
  ### Resource Icons
  > Icons used in the Graphical User Interface can be found in the `res` pacakge by following the path: src > main > java > res.
  </details>
-    
+ 
+Screenshots
+============================
+<details><summary><b>Initial Startup</b></summary>
+</details>
+
+<details><summary><b>Logged In</b></summary>
+</details>
+
+<details><summary><b>Credential View</b></summary>
+</details>
+
+<details><summary><b>Team View</b></summary>
+</details>
+
+<details><summary><b>Inbox with team invitiation</b></summary>
+</details>
+
+<details><summary><b>Audit Log</b></summary>
+</details>
 
     
