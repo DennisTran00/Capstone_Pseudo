@@ -214,3 +214,14 @@ Username VARCHAR(255)
 ````
 </details>
  
+Troubleshooting Problems
+============================
+> Since this project uses JavaFX for the graphical user interface, some problems related to JavaFX dependencies may occur when trying to launch the project for the first time. Make sure to follow these fixes to common problems with our project.
+<details><summary><b>Ensure that the correct JavaSE version is being used</b></summary>
+</details>
+<details><summary><b>Installing the correct Java dependencies and setting it in the runtime configurations</b></summary>
+</details>
+<details><summary><b>Refreshing the workspace</b></summary>
+</details>
+<details><summary><b>Program launches but program fails when trying to log in / register</b></summary>
+</details>
