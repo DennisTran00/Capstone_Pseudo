@@ -65,7 +65,7 @@ Project Submission Structure
  #### database
     .
     ├── database
-    │   ├── DBConnection.java           # Creates a connection to the database and has querying methods
+    │   ├── DBConnection.java		# Creates a connection to the database and has querying methods
     │   ├── AESCipher.java		# Retrieves the keystore key and encrypts/decrypts credentials
     │   ├── KeyEncoding.java		# Enum class to define encoding methods
     │   ├── KeystoreUtil.java		# Setup for the keystore
