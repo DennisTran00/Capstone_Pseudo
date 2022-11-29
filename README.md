@@ -211,6 +211,13 @@ GroupID VARCHAR(255),
 UserID VARCHAR(255),
 Username VARCHAR(255)
 );
+
+CREATE TABLE audit (
+GroupID varchar(255),
+Username VARCHAR(255),
+CredentialUN varchar(255).
+AccessTime VARCHAR(255)
+);
 ````
 </details>
  
