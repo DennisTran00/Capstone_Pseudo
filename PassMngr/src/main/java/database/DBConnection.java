@@ -20,7 +20,7 @@ public class DBConnection {
 	private static DBConnection DBC;
 	private Connection 			dbCon;
 	private String 				uri;
-    private String keystoreFileLocation = "C:\\Users\\Son\\git\\Pseudo\\PassMngr\\src\\main\\java\\database\\aes-keystore.jck";
+    private String keystoreFileLocation = "src\\main\\java\\database\\aes-keystore.jck";
     private String storePass = "mystorepass";
     private String alias = "jceksaes";
     private String keyPass = "mykeypass";
