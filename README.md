@@ -43,7 +43,8 @@ Project Submission Structure
     │   │   │   │   ├── team          # Package for team instances and storing information about created teams
     │   │   │   │   └── user          # Package for user isntances when a user registers an account
     │   │   │   └── ... 
-    │   │   └── ... 
+    │   │   └── test 
+    │   │   │   └── # test files
     │   └── ... 
     └── ...
 
@@ -229,6 +230,19 @@ Encryption
 ============================
 This project utilizes AES symmetric encryption to secure the credentials that are stored in the database. Therefore, it is imperative that the setup for the encyption is done correctly. Not setting up the encryption for the project will result in several project runtime errors. Fortunately, this process is fairly simple. The Password Manager utilizes a Keystore that manages the keys used for encryption. To set up the Keystore follow these steps:
 1. Assuming you are on Windows OS, open the Command Prompt by pressing `Win + R` and entering `cmd`.
+2. Go into the database directory of the project. For example, doing `cd C:\Users\YOUR_USER\git\Pseudo\PassMngr\src\main\java\database` will change directories to the database directory. Not being in the correct directory will most likely cause errors to occur, thus this step is very important.
+3. Once in the database directory, paste the following into the command prompt: `keytool -genseckey -keystore aes-keystore.jck -storetype jceks -storepass mystorepass -keyalg AES -keysize 256 -alias jceksaes -keypass mykeypass`. If the cmd prompt asks for a password, enter `password`. It most likely will not. Doing this step will create the Keystore file inside of the database directory that will be used. Ensure that the file is there by refreshing the project workspace in the Eclipse IDE.
+4. Done! The Keystore should work now.
+
+Testing Framework
+============================
+JUnit was used as the testing framework for this project. It is highly recommended that you use Eclipse IDE to run the project. The JUnit tests can be found under the `test` directory within `src`. To ensure that the tests work and that there are no compiling errors, make sure that you have the JUnit Library/Dependencies for the project. If you do not, follow these steps (in Eclipse IDE):
+1. Right click the project file `PassMngr`.
+2. Find and hover over `Build Path`, then click `Configure Build Path...`.
+3. In the window that pops up, find and click on the `Libraries` tab.
+4. Click on `ModulePath` and click `Add Library...`.
+5. Select `JUnit` to add the library. The version should be JUnit 5. Click Finish.
+6. JUnit should be imported as a library now. You can make sure of this by looking at the project files and see that JUnit is now in the project workspace.
 
 Troubleshooting Problems
 ============================
