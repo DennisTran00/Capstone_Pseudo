@@ -224,7 +224,12 @@ AccessTime VARCHAR(255)
 );
 ````
 </details>
- 
+
+Encryption
+============================
+This project utilizes AES symmetric encryption to secure the credentials that are stored in the database. Therefore, it is imperative that the setup for the encyption is done correctly. Not setting up the encryption for the project will result in several project runtime errors. Fortunately, this process is fairly simple. The Password Manager utilizes a Keystore that manages the keys used for encryption. To set up the Keystore follow these steps:
+	1)
+
 Troubleshooting Problems
 ============================
 > Since this project uses JavaFX for the graphical user interface, some problems related to JavaFX dependencies may occur when trying to launch the project for the first time. Make sure to follow these fixes to common problems with our project. All of these fixes are through the assumption that the project is being imported into Eclipse IDE.
