@@ -281,7 +281,7 @@ Now, locate PasswordManager.java and right click it. Hover over `Run As` and sel
 
 <details><summary><b>Refreshing the workspace</b></summary>
 
-If you are able to launch the project, but the GUI is just showing a white box, it means that is not correctly reading the .jfxml file. Locate PasswordManagerGUI.fxml and make sure there is content in that file. If there is content in that file, make sure to refresh the workspace and relaunch the project. In most cases this will fix the problem of an empty GUI.
+If you are able to launch the project, but the GUI is just showing a white box, it means that is not correctly reading the .fxml file. Locate PasswordManagerGUI.fxml and make sure there is content in that file. If there is content in that file, make sure to refresh the workspace and relaunch the project. In most cases this will fix the problem of an empty GUI.
 
 </details>
 
